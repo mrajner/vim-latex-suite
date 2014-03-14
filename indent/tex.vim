@@ -96,6 +96,7 @@
 if exists("b:did_indent")
     finish
 endif
+    finish
 let b:did_indent = 1
 
 " Delete the next line to avoid the special indention of items
