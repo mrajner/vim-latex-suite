@@ -113,7 +113,7 @@ function! MakeTexFolds(force)
 	endif
 
 	let s = 'verbatim,comment,eq,gather,align,figure,table,thebibliography,'
-			\. 'keywords,abstract,titlepage,frame,tikzpicture,block'
+			\. 'keywords,abstract,titlepage,frame,tikzpicture,block,column,columns'
     if !exists('g:Tex_FoldedEnvironments')
 		let g:Tex_FoldedEnvironments = s
 	elseif g:Tex_FoldedEnvironments[0] == ','
