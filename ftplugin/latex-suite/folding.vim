@@ -103,7 +103,7 @@ function! MakeTexFolds(force)
 	" a command begins on that line but does not end on that line. This
 	" requires a regexp which will match unbalanced curly braces and that is
 	" apparently not doable with regexps.
-	let s = ''
+	let s = 'note'
     if !exists('g:Tex_FoldedCommands')
 		let g:Tex_FoldedCommands = s
 	elseif g:Tex_FoldedCommands[0] == ','
