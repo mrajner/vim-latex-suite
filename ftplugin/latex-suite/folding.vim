@@ -286,7 +286,7 @@ function! MakeTexFolds(force)
 					" 	\commandname{something \bf{text} and 
 					" will _not_ start a fold.
 					" In other words, the pattern is safe, but not exact.
-					call AddSyntaxFoldItem('^\s*\\'.s.'{[^{}]*$','^[^}]*}',0,0)
+					call AddSyntaxFoldItem('^\s*\\'.s.'\(<\d\+>\)*{[^{}]*$','^[^}]*}',0,0)
 				else
 					if s =~ 'itemize\|enumerate\|description'
 						" These environments can nest.
